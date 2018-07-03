@@ -11,5 +11,8 @@ module.exports = {
         loader: 'raw-loader'
       }
     ]
+  },
+  devServer: {
+    historyApiFallback: true
   }
 }

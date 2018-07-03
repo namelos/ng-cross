@@ -7,6 +7,6 @@ angular.bootstrap(document.querySelector('#ng1app'), [
 
 import 'zone.js/dist/zone'
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic'
-import { AppModule as NgXModule } from './app.module'
+import { AppModule as NgXModule } from './ngX/app.module'
 
 platformBrowserDynamic().bootstrapModule(NgXModule)

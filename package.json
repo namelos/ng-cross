@@ -30,6 +30,8 @@
     "@angular/platform-browser-dynamic": "^5.2.11",
     "@angular/router": "^5.2.11",
     "reflect-metadata": "^0.1.12",
+    "router5": "^6.2.4",
+    "router5-helpers": "^5.2.1",
     "rxjs": "^5.5.11",
     "zone.js": "^0.8.26"
   }

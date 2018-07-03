@@ -1,9 +1,8 @@
 import { Component } from '@angular/core'
+import template from './hello.html'
 
 @Component({
   selector: 'app',
-  template: `
-    <h1>Hello from Angular X</h1>
-  `
+  template
 })
 export class HelloComponent {}

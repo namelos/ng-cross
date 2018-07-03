@@ -1,5 +1,12 @@
+import angular from 'angular'
+import { AppModule as Ng1Module } from './ng1/app.module'
+
+angular.bootstrap(document.querySelector('#ng1app'), [
+  Ng1Module.name
+])
+
 import 'zone.js/dist/zone'
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic'
-import { AppModule } from './app.module'
+import { AppModule as NgXModule } from './app.module'
 
-platformBrowserDynamic().bootstrapModule(AppModule)
+platformBrowserDynamic().bootstrapModule(NgXModule)

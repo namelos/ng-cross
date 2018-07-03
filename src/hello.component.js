@@ -5,4 +5,6 @@ import template from './hello.html'
   selector: 'app',
   template
 })
-export class HelloComponent {}
+export class HelloComponent {
+  message = 'Hello from Angular X!'
+}

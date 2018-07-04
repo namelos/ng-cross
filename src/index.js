@@ -3,6 +3,7 @@ import browserPlugin from 'router5/plugins/browser'
 import listenersPlugin from 'router5/plugins/listeners'
 
 import angular from 'angular'
+import ngRoute from 'angular-route'
 import { AppModule as Ng1Module } from './ng1/app.module'
 
 import 'zone.js/dist/zone'
@@ -23,7 +24,12 @@ export const router = createRouter(routes, {
   .usePlugin(browserPlugin({ useHash: true }))
   .usePlugin(listenersPlugin())
 
+function destroyNg2() {
+  ngXModule && ngXModule.destroy()
+}
+
 function renderNg1() {
+  destroyNg2()
   angular.bootstrap(document.querySelector('#ng1app'), [Ng1Module.name])
 }
 
@@ -34,11 +40,9 @@ function renderNg2() {
   .then(m => ngXModule = m)
 }
 
-window.destroy = function() {
-  ngXModule && ngXModule.destroy()
-}
 
 router.subscribe(({route}) => {
+  debugger
   console.log(route)
   if (!route) {
     return renderNg1()

@@ -29,6 +29,7 @@
     "@angular/platform-browser": "^5.2.11",
     "@angular/platform-browser-dynamic": "^5.2.11",
     "@angular/router": "^5.2.11",
+    "angular-route": "^1.7.2",
     "reflect-metadata": "^0.1.12",
     "router5": "^6.2.4",
     "router5-helpers": "^5.2.1",
